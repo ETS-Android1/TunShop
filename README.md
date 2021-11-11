@@ -1,4 +1,4 @@
-#TunShop
+# TunShop
 Cette application a pour objectif d’avoir toutes les cartes de fidélité toujours avec le client, en les retrouvant sur son téléphone mobile. Elle permet également de comparer les prix d’un produit entre les différents magasins, de gérer les listes des courses, de géo-localiser les magasins et enfin de recevoir les nouvelles promotions.
 
 Pour faire tourner l’application veuillez suivre ces instructions:
