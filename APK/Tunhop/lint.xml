@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/comparateur_mainlayout.xml" />
+    </issue>
+    <issue id="ExtraText">
+        <ignore path="res/layout/comparateur_mainlayout.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_main.xml" />
+        <ignore path="res/layout/affichercarte.xml" />
+        <ignore path="res/layout/comparateur_mainlayout.xml" />
+        <ignore path="res/layout/nouvellecarte.xml" />
+        <ignore path="res/layout/produit_item.xml" />
+    </issue>
+    <issue id="InflateParams" severity="ignore">
+        <ignore path="src/com/menu/CarteMain.java" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/activity_main.xml" />
+    </issue>
+    <issue id="RtlHardcoded">
+        <ignore path="res/layout/comparateur_mainlayout.xml" />
+        <ignore path="res/layout/nouvellecarte.xml" />
+        <ignore path="res/layout/produit_item.xml" />
+    </issue>
+</lint>

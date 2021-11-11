@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >  
+   
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+				    <RelativeLayout
+				        android:id="@+id/r1"
+				        android:layout_width="150dp"
+				        android:layout_height="wrap_content"
+				        android:background="@drawable/border"
+				        android:gravity="center"
+				        android:padding="10dp" >
+
+						      <TextView
+							    android:id="@+id/titre"
+							    android:text="Quantité"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:textColor="@color/bleu_marin"
+							    android:layout_marginTop="20dp"
+							    android:layout_marginBottom="0dp"
+							    android:gravity="center"
+							    android:textSize="20sp"
+							    android:textStyle="bold" />
+							<View
+							    android:id="@+id/v"
+							    android:layout_width="fill_parent"
+							    android:layout_height="3dp"
+							    android:layout_alignRight="@+id/titre"
+							    android:layout_below="@+id/titre"
+							    android:layout_marginBottom="20dp"
+							    android:background="@color/bleu_marin"/>
+							<EditText
+							    android:id="@+id/quantite"
+							    android:hint="Ajouter"
+							    android:inputType="number"
+							    android:layout_height="wrap_content"
+							    android:layout_below="@+id/v"
+							    android:layout_width="wrap_content"
+							    android:textSize="30sp"/>
+   						 </RelativeLayout>
+
+				       <RelativeLayout
+				           android:layout_width="150dp"
+				           android:layout_height="wrap_content"
+				           android:layout_alignParentRight="true"
+				           android:layout_toRightOf="@+id/r1"
+				           android:background="@drawable/border"
+				           android:gravity="center"
+				           android:padding="10dp" >
+
+						      <TextView
+							    android:id="@+id/titre2"
+							    android:text="Prix"							    
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:textColor="@color/bleu_marin"
+							    android:layout_marginTop="20dp"
+							    android:layout_marginBottom="0dp"
+							    android:gravity="center"
+							    android:textSize="20sp"
+							    android:textStyle="bold" />
+							<View
+							    android:id="@+id/v2"
+							    android:layout_width="fill_parent"
+							    android:layout_height="3dp"
+							    android:layout_alignRight="@+id/titre2"
+							    android:layout_below="@+id/titre2"
+							    android:layout_marginBottom="20dp"
+							    android:background="@color/bleu_marin"/>
+							<EditText
+							    android:inputType="numberDecimal"
+							    android:id="@+id/prix"
+							    android:hint="Ajouter"
+							    android:layout_height="wrap_content"
+							    android:layout_below="@+id/v2"
+							    android:layout_width="wrap_content"
+							    android:textSize="30sp"/>
+   				 </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/cancel"
+            android:background="@drawable/bouton_style"
+            android:text="ajouter"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bouton_style"
+            android:text="annuler"
+            android:textStyle="bold" />
+
+        </RelativeLayout>  
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout 
+       android:layout_width="fill_parent"       
+       android:layout_height="fill_parent"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:background="@drawable/background_portrait"
+       >
+       <include layout="@layout/menubar" />
+	   <ImageView
+		        android:layout_alignParentRight="true"
+		        android:id="@+id/add"  
+		        android:background="@drawable/produit"
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+		       	android:layout_margin="10dp"
+			    android:clickable="true"
+			    android:onClick="NouveauProduit"/>
+	  	  <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/menu"
+         android:layout_above="@+id/footer"
+        android:id="@+id/list"     
+        android:orientation="vertical"    
+        >    
+			<RelativeLayout
+			    
+				 android:layout_width="fill_parent"
+				 android:layout_marginLeft="30dp"
+				 android:layout_marginRight="10dp"
+				 android:layout_height="wrap_content" 
+				 android:orientation="vertical"
+				 android:layout_above="@+id/footer"		
+				 android:id="@+id/header"	
+				> 					  
+						<ListView 
+						    android:scrollbars="none"
+						    android:smoothScrollbar="true"
+						    android:drawSelectorOnTop="false"
+						    android:layout_weight="3"					    
+						    android:orientation="vertical"
+							android:id="@+id/section_list_view" 
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+						</ListView>
+					<ListView 						
+						android:id="@+id/section_list_view_panier" 
+						android:scrollbars="none"						
+						android:layout_below="@+id/section_list_view"
+						android:layout_width="fill_parent"
+						android:layout_weight="1"
+						android:layout_height="wrap_content">
+					</ListView>
+	 </RelativeLayout>
+	  <ImageView
+        android:id="@+id/aucune"
+        android:background="@drawable/aucun_produit"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        />  
+    </LinearLayout>	
+      <RelativeLayout
+		    android:id="@+id/footer"
+		    android:layout_width="fill_parent"
+		    android:layout_height="45dp"
+		    android:background="@color/gray_so_dark"
+		    android:layout_alignParentBottom="true"
+		    android:padding="3dp" >
+
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:text="Budget :"
+		        android:textColor="@color/blanc"
+		        android:textSize="12sp" />
+
+		    <TextView
+		        android:id="@+id/limite"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:background="@color/red"
+		        android:gravity="left"
+		        android:text="Vous avez dépassé le budget"
+		        android:visibility="invisible"
+		        android:textColor="@color/blanc"
+		        android:textSize="12sp"
+		        />
+		    <TextView
+		        android:id="@+id/budget_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/textView1"
+		        android:textColor="@color/blanc"
+		        android:textSize="20sp"
+		        android:text="3"
+		        android:textStyle="bold" />
+
+		    <TextView
+		        android:id="@+id/somme_TOT"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="0.0"
+		        android:textColor="@color/blanc"
+		        android:textSize="20sp"
+		        android:textStyle="bold"
+		        android:layout_below="@+id/textView2"
+		        android:layout_alignParentLeft="true" />
+
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:text="Somme :"
+		        android:textColor="@color/blanc"
+		        android:textSize="12sp" />
+
+		</RelativeLayout>
+</RelativeLayout>

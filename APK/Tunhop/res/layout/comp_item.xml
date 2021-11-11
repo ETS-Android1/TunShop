@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/comp_item"
+    android:orientation="vertical"
+    android:padding="9dp" >
+     <ImageView
+        android:id="@+id/img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="9dp"
+        />
+        <TextView
+        android:id="@+id/libp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="Libelle produit"/>
+        <TextView
+        android:id="@+id/prix"
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@color/green"
+        android:text="78.9 DT"
+        android:textStyle="bold"
+        android:layout_below="@+id/libp"
+      />
+</RelativeLayout>

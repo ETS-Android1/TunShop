@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <updated>2015-04-24T00:52:40.495-07:00</updated>
+  <author>Tunshop</author>
+ <promotions> 			
+
+				   	    <promotion>
+						<titre>Glaces EXQUISE PREMIUM NASSEM</titre>
+						<description>Goûts au choix 1 Litre Les 2 -50 % SUR LE 2e</description>
+						<categorie>Alimentation</categorie>
+						<date_fin>30/05/2015</date_fin>
+						<img>glaces.jpg</img>
+						<magasin>
+							<lib>Geant</lib>
+							<logo>geant.png</logo>
+						</magasin>
+				   </promotion>
+				   <promotion>
+						<titre>Frites allumettes surgelées MCCAIN</titre>
+						<description>750 g Les 2 -50 % SUR LE 2e</description>
+						<categorie>Alimentation</categorie>
+						<date_fin>12/06/2015</date_fin>
+						<img>frite.jpg</img>
+						<magasin>
+							<lib>Geant</lib>
+							<logo>geant.png</logo>
+						</magasin>
+				   </promotion>
+				    <promotion>
+						<titre>Cabine case ABS BOMEX</titre>
+						<description>Existe en bleu, bleu clair et rouge 4 Roues 51 cm</description>
+						<categorie>Bazar</categorie>
+						<date_fin>10/06/2015</date_fin>
+						<img>cabine.jpg</img>
+						<magasin>
+							<lib>Geant</lib>
+							<logo>geant.png</logo>
+						</magasin>
+				   </promotion>
+				    <promotion>
+						<titre>Glaces DOLCE AMARO</titre>
+						<description>Goûts au choix 500 ml Les 2 -50 % SUR LE 2e</description>
+						<categorie>Alimentation</categorie>
+						<date_fin>30/05/2015</date_fin>
+						<img>glaces2.jpg</img>
+						<magasin>
+							<lib>Geant</lib>
+							<logo>geant.png</logo>
+						</magasin>
+				   </promotion>
+				   <promotion>
+						<titre>Crème DESSERT AU CHOCKOLAT DELICE DANETTE</titre>
+						<description>Packet de 8 à 3,390 DT </description>
+						<categorie>Alimentation</categorie>
+						<date_fin>30/05/2015</date_fin>
+						<img>danette.jpg</img>
+						<magasin>
+							<lib>Carrefour</lib>
+							<logo>carrefour.png</logo>
+						</magasin>
+				   </promotion>
+				   <promotion>
+						<titre>Fromage rape foire </titre>
+						<description>Le lot de 2 sachets de 150 g </description>
+						<categorie>Alimentation</categorie>
+						<date_fin>30/05/2015</date_fin>
+						<img>fromage_rape.jpg</img>
+						<magasin>
+							<lib>Carrefour</lib>
+							<logo>carrefour.png</logo>
+						</magasin>
+				   </promotion>	
+				   <promotion>
+						<titre>Biscuits sec SAIDA </titre>
+						<description>Le lot de 3 paquets de 24 pièces </description>
+						<categorie>Alimentation</categorie>
+						<date_fin>30/05/2015</date_fin>
+						<img>saida.jpg</img>
+						<magasin>
+							<lib>Monoprix</lib>
+							<logo>monoprix.png</logo>
+						</magasin>
+				   </promotion>	
+					<promotion>
+						<titre>Table à 70x70 cm + 4 chaises </titre>
+						<description>+ Fontaine 15 L gratuite</description>
+						<categorie>Maison</categorie>
+						<date_fin>30/06/2015</date_fin>
+						<img>table.jpg</img>
+						<magasin>
+							<lib>Monoprix</lib>
+							<logo>monoprix.png</logo>
+						</magasin>
+				   </promotion>	
+					<promotion>
+						<titre>Télévision LCD</titre>
+						<description>Profitez d'un télé à 880 DT</description>
+						<categorie>Maison</categorie>
+						<date_fin>30/06/2015</date_fin>
+						<img>tele.jpg</img>
+						<magasin>
+							<lib>Magasin General</lib>
+							<logo>mg.png</logo>
+						</magasin>
+				   </promotion>					   
+				   
+			   
+ </promotions>
+ </feed>

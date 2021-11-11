@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <include
+       layout="@layout/menubar" />
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+     >
+    <TextView
+        android:id="@+id/addCarte"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="Ajouter une nouvelle carte"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_bg"
+        android:clickable="true"
+        android:onClick="nouvellecarte"/>
+ </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/list"
+        android:orientation="vertical"
+        >
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@drawable/play_expand_background"
+        android:listSelector="@drawable/play_expand_seletor"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:layout_marginTop="25dp" >       
+    </ExpandableListView>
+    <ImageView
+        android:id="@+id/aucune"
+        android:background="@drawable/aucune_carte"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        />  
+    </LinearLayout>
+
+</LinearLayout>

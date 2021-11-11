@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/capture"
+>
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="9dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blanc"
+        android:textSize="20sp"
+        android:text="Veuillez mettre le code dans le viseur"/>
+
+    <ImageView
+        android:id="@+id/takepicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:clickable="true"
+        android:onClick="fermer"
+        android:contentDescription="@string/description"
+        android:src="@drawable/android_button" />
+       <ImageView
+        android:id="@+id/flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="23dp"
+        android:clickable="true"
+        android:onClick="flush"
+        android:contentDescription="@string/description"
+        android:src="@drawable/flash" />
+        
+</RelativeLayout>

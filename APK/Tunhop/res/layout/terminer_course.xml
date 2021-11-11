@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+<RelativeLayout
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/haut">
+		<ImageView
+		        android:id="@+id/icon"
+		        android:contentDescription="@string/image"
+		        android:layout_width="30dp"
+		        android:layout_height="30dp"
+		        android:background="@drawable/basket"
+		        android:layout_marginStart="46dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_alignParentLeft="true"
+		        />
+		    <TextView
+		        android:id="@+id/title"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/icon"
+		        android:textColor="@color/black"
+		        android:textStyle="bold"
+		        android:textSize="20sp"
+		        android:layout_marginTop="15dp"
+		        android:text="Courses terminées !"/>
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/milieu"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/haut"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="40dp" >
+
+		        <CheckBox
+			     android:id="@+id/ch1"
+			     android:layout_width="fill_parent"
+				 android:layout_height="wrap_content" 
+				 android:checked="true"
+				 android:text="Afficher ma carte de fidélité"/>
+		                <CheckBox
+			     android:id="@+id/ch2"
+			     android:layout_below="@+id/ch1"
+			     android:layout_width="fill_parent"
+				 android:layout_height="wrap_content" 
+				 android:checked="true"
+				 android:text="Sauvegarder ma liste"/>
+    </RelativeLayout>
+    <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_below="@+id/milieu"
+       >
+		   <Button
+            android:id="@+id/fermer"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/cancel"
+            android:background="@drawable/button_back"
+            android:text="Fermer la liste"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/button_back"
+            android:text="annuler"
+            android:textStyle="bold" />
+        
+        
+    </RelativeLayout>
+</LinearLayout>

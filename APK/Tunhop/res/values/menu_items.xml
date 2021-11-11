@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item ></item>
+        <item >Acceuil</item>
+        <item >Cartes de Fidélité</item>
+        <item >Listes des courses</item>
+        <item >Géolocalisation</item>
+        <item >Comparateur des prix</item>
+        <item >Promotions</item>
+        <item >Réglages</item>
+        <item >Aide</item>
+    </string-array>
+</resources>

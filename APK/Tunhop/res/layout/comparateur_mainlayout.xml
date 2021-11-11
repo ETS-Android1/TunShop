@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back" >
+     <include layout="@layout/menubar" />
+				<RelativeLayout
+			    android:id="@+id/h"
+			    android:layout_marginTop="80dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" >
+			
+			    <EditText
+			        android:id="@+id/res"
+			        android:layout_centerVertical="true"
+			        android:layout_width="270dp"
+			        android:background="@drawable/oval"
+			        android:layout_margin="3dp"
+			        android:padding="12dp"
+			        android:layout_height="50dp"
+			        android:textSize="15sp"
+			        android:hint="Veuillez Saisir le code barre"
+			        android:inputType="number"/>
+				      <ImageView
+				        android:id="@+id/btnscan"
+				        android:layout_marginLeft="-54dp"
+				        android:layout_toRightOf="@+id/res"
+				        android:onClick="Scan"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/ic_scan"
+				        android:layout_centerVertical="true"/>
+			         <ImageView
+				        android:id="@+id/btncomp"
+				        android:layout_alignParentRight="true"
+				        android:layout_marginRight="3dp"	
+				        android:layout_centerVertical="true"        
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:onClick="chercherLib"
+				        android:src="@drawable/search"/>
+		</RelativeLayout>
+		<RelativeLayout 
+		    android:id="@+id/re"
+		    android:visibility="gone"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/h"
+		    >
+		 <TextView
+		    android:id="@+id/text_res"
+		     android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dp"
+		    android:textSize="20dp"
+		    android:textStyle="bold"		   
+		    android:text="Résultats de recherche de : "		    
+		    />
+		<TextView
+		    android:id="@+id/text_prod"
+		    android:layout_margin="10dp"
+		    android:gravity="center"
+		    android:textSize="20dp"
+		    android:textStyle="bold"
+		    android:textColor="@color/red"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Biscuit smile"
+		    android:layout_below="@+id/text_res"
+		    />
+		</RelativeLayout>
+			    <ListView
+			        android:id="@+id/list"
+			        android:layout_below="@+id/re"
+		            android:layout_marginTop="33dp"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"/>
+			    <ImageView 
+			        android:id="@+id/aucun"
+			        android:layout_below="@+id/list"
+			        android:background="@drawable/aucun_comparateur"
+			        android:layout_width="wrap_content"
+			        android:layout_centerInParent="true"
+			        android:layout_height="wrap_content"
+			        android:visibility="gone"/>
+
+</RelativeLayout>

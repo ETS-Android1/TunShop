@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="magasin_array">
+        <item>Carrefour</item>
+        <item>Geant</item>
+        <item>Monoprix</item>
+        <item>Magasin General</item>
+    </string-array>
+</resources>

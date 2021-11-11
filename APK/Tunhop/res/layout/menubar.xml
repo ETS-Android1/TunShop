@@ -1,0 +1,30 @@
+<!-- This acts as Actionbar -->
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:background="@drawable/menubar"
+	        android:id="@+id/menu"
+	        android:orientation="horizontal"
+	        android:padding="5dp" >
+	        <ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_gravity="left"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/panier"
+			    android:id="@+id/back"
+			    android:clickable="true"
+			    android:onClick="retourner"
+			    />
+	        <TextView
+	            android:layout_toRightOf="@+id/back"
+	            android:layout_marginTop="9dp"
+	            android:id="@+id/titre"
+	            android:layout_marginLeft="26dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20dp"
+	            android:text="sample activite"
+	            android:textStyle="bold"
+	            />
+	       </RelativeLayout>

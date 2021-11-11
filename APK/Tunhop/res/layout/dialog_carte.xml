@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+        >
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:inputType="textPersonName"
+        android:hint="Nom du porteur"
+        android:layout_marginBottom="23dp" >
+        <requestFocus />
+    </EditText>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="23dp"
+    >
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:background="@drawable/button_back"
+        android:text="@string/scan" />
+    <EditText
+        android:layout_toEndOf="@+id/scan_btn"
+        android:id="@+id/res"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:hint="N°"
+         />
+    </RelativeLayout> 
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_back"
+            android:text="Engregistrer"
+            android:onClick="saveCarte"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp"
+            android:text="annuler"
+            android:background="@drawable/button_back"
+            android:textStyle="bold" />
+
+        </RelativeLayout>
+        </LinearLayout>
+
+</LinearLayout>

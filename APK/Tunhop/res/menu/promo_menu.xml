@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+		
+		<item 
+		    android:id="@+id/trier_cat"
+          	android:title="Trier par catégorie"
+          	android:showAsAction="never"
+          />
+	     <item 
+	      android:id="@+id/trier_mag"
+          android:title="Trier par Magasin"
+          android:showAsAction="never"
+          />
+</menu>

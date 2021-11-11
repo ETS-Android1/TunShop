@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="fill_parent"
+	 android:layout_height="wrap_content"
+	 android:id="@+id/layout"
+	 android:padding="9dp"
+	 android:clickable="true"
+	 android:onClick="UpdateProduit"
+	 android:baselineAligned="false"
+	>
+	<RelativeLayout
+	     android:layout_width="fill_parent"
+	 	 android:layout_height="wrap_content"
+	 	 android:background="@drawable/layout"
+	    >
+	<TextView
+	     android:id="@+id/produit"
+	     android:clickable="true"
+	     android:text="sample"
+	     android:layout_alignParentTop="true"
+	     android:layout_alignParentLeft="true"
+	     android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:textSize="19sp"
+		 android:textStyle="bold"
+		 android:onClick="MyClick"
+		 
+		  >
+	</TextView>
+	<TextView
+	    android:id="@+id/labq"
+        android:layout_marginTop="2dp"
+        android:text="Quantite :"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_below="@+id/produit"
+        android:layout_marginRight="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+	 <TextView
+        android:id="@+id/quantite"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_below="@+id/produit"
+        android:layout_toRightOf="@+id/labq"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+/>
+	  <TextView
+        android:id="@+id/lab_p"
+        android:layout_marginTop="2dp"        
+        android:text=", Prix :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/quantite"
+        android:layout_marginRight="3dp"
+        android:layout_below="@+id/produit"
+        
+/>
+	 <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/lab_p"
+        android:layout_below="@+id/produit"
+        android:layout_marginRight="37dp"/>
+      
+      <TextView
+        android:id="@+id/total_l"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/prix"
+        android:layout_below="@+id/produit"
+        android:text="Total :"
+/>
+       
+      <TextView
+        android:id="@+id/total"
+        android:layout_marginTop="2dp"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/total_l"
+        android:layout_below="@+id/produit"
+/>
+
+      <CheckBox
+	     android:id="@+id/ch"
+	     android:layout_margin="10dp"
+	    android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_alignParentRight="true" 
+		 android:layout_centerVertical="true"
+		 android:onClick="CheckBoxEvent"
+		 android:layout_alignParentTop="true"
+		 android:scaleX="1.5"
+		android:scaleY="1.5"/>
+      </RelativeLayout>
+</RelativeLayout>

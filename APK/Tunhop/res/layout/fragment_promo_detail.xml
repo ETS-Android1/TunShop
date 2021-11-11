@@ -1,0 +1,49 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ScrollView" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 		
+		<RelativeLayout
+		    android:id="@+id/promo_detail_layout"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+		    android:orientation="vertical"
+			android:background="#FFFFFF">
+
+			<ImageView
+				android:id="@+id/img"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="2dp"
+    		/>
+			<TextView 
+			    android:id="@+id/promo_title"
+			    android:layout_marginTop="3dp"
+			    android:layout_below="@+id/img"
+			    android:gravity="center"
+			    style="?android:attr/textAppearanceLarge"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textStyle="bold"
+				android:textColor="#38b4ea"
+				android:text="test test"
+			    tools:context=".PromoDetailFragment" />
+		 
+			<TextView 
+			    android:id="@+id/promo_detail"
+			    android:layout_below="@+id/promo_title"
+			    android:paddingLeft="40dp"
+			    android:layout_centerHorizontal="true"
+			    android:gravity="left"
+			    style="?android:attr/textAppearanceLarge"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+	        	android:textSize="16sp"
+	        	android:text="test test test test test test test test test test test test"
+			    tools:context=".PromoDetailFragment" />		
+ 			   
+	    </RelativeLayout>
+</ScrollView>
